@@ -1,4 +1,4 @@
-*{
+﻿*{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -11,6 +11,7 @@ body{
     font-family:"Yu Gothic",sans-serif;
     line-height:2;
 
+    text-align:center;
 }
 
 .container{
@@ -41,14 +42,13 @@ body{
 
 section{
 
-    padding:70px 25px;
+    padding:20px 25px;
 
 }
 
 h2{
 
     color:#ffe900;
-    margin-bottom:25px;
 
     font-size:clamp(28px,5vw,40px);
 
@@ -60,7 +60,7 @@ p{
 
     white-space:pre-line;
 
-    font-size:clamp(16px,2vw,18px);
+    font-size:clamp(16px,2vw,22px);
 
 }
 
@@ -160,6 +160,63 @@ footer h3{
 
 }
 
+
+
+.separator{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:25px 0;
+
+}
+
+.separator span{
+
+    position:relative;
+
+    width:720px;
+    height:2px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #ffe900,
+        transparent
+    );
+
+}
+
+.separator span::after{
+
+    content:"◆";
+
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-55%);
+
+    color:#ffe900;
+
+    font-size:14px;
+
+}
+
+.deployment{
+
+    display:block;
+    font-size:clamp(36px,6vw,56px);
+    font-weight:700;
+    letter-spacing:.12em;
+    line-height:1.1;
+    margin:4px 0;
+    color:#ffe900;
+    text-shadow:0 0 8px rgba(255,233,0,.25);
+
+}
 @media(max-width:768px){
 
     section{
@@ -173,5 +230,6 @@ footer h3{
         font-size:36px;
 
     }
+
 
 }
